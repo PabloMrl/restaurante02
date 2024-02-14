@@ -1,0 +1,31 @@
+@import url('../css/style.css');
+
+body {
+    font-family: var(--ff);
+}
+
+/*Contenedor de los platillos del menu*/
+
+.menu{
+    padding: 1em  0;
+    max-width: 1400px;
+    margin-inline: auto;
+}
+
+.container-menu-list, 
+ .title-menu {
+    width: 600px;
+    margin-inline: auto;
+}
+.menu-content {
+    background-color: rgb(30, 234, 166);
+}
+.menu-list,
+.title-menu ,
+.drink-list {
+    padding: 4px 6px;
+    background-color: rgb(222, 240, 234);
+    margin-top: 10px;
+    padding: 2em;
+}
+

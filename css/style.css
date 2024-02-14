@@ -1,0 +1,183 @@
+:root {
+    /*Tipo de fuente abreviatura --ff(font-family)*/
+    --ff: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --fw-thin: 100;
+    --fw-Elight: 200;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-bold: 700;
+}
+
+/*Reset de propiedades por defecto de los navegadores*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/*Navegacion de la página*/
+.main-menu-list {
+    display: flex;
+    gap: 5px;
+}
+
+.main-menu-item {
+    padding: 7px 10px
+}
+
+body {
+    font-family: var(--ff);
+}
+
+/*Section Hero*/
+.hero {
+    background-image: url(../img/bg-hero\ \(2\).jpg);
+    background-position: center;
+    padding: 100px 0;
+}
+
+.content-hero {
+    padding-inline: 2em;
+}
+
+.content-hero h2 {
+    font-weight: var(--fw-bold);
+    margin-bottom: 20px;
+    color: #fff; 
+    font-size: 32px;
+}
+.content-hero p {
+    color: #e0e9e9;
+    font-size: 24px;
+    text-shadow: 1px 1px 1px rgba(98, 6, 6, 0.934); 
+}
+.btn {
+    display: inline-block;
+    padding: 10px 12px;
+    background-color: #d33333;
+    margin-top: 20px;
+    color: aliceblue;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: hsl(0, 0%, 97%);
+    color: #000;
+}
+/*Fin de la section Hero*/
+
+/*Dish list*/
+.dish-item {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.dish-info {
+    flex: 1;
+  }
+  
+.dish-item img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    object-fit: cover;
+  }
+
+  .actions {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    gap: 4px;
+  }
+  
+  .actions button {
+    margin-bottom: 5px;
+    padding: 5px 10px;
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 120px;
+    height: 30px;
+  }
+  
+  .actions button:hover {
+    background-color: #e65100;
+  }
+
+  /* Estilos para las estrellas */
+.star {
+    color: #ffcc00; /* Color de las estrellas */
+  }
+  
+
+  /*Section testimonials*/
+
+  .testimonials {
+    background-color: #f8f8f8;
+    padding: 1rem 0 ;
+   
+  }
+
+ .testimonials > h2 {
+    text-align: center;
+ }
+
+ /*Testimonios*/
+ 
+  .testimonial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:30px ;
+  }
+
+  .testimonial img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+  }
+  
+  .testimonial p {
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+  
+  .testimonial .author {
+    font-weight: bold;
+  }
+
+  /*Botón para darle me gusta*/
+  .like-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+    border: none;
+  }
+
+  .likes {
+    margin-left: 10px;
+  }
+
+  /*Estilos generales para pantallas grandes*/
+  header,
+  .hero,
+  .testimonials,
+  .platillos {
+    max-width: 1400px;
+    margin-inline: auto;
+  }
