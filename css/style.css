@@ -16,6 +16,9 @@
   list-style: none;
   text-decoration: none;
 }
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
 
 img {
   width: 100%;
@@ -185,7 +188,10 @@ body {
 
 /* Secction ofertas especiales*/
 .ofertas-especiales {
- background-color: #d33333;
+ background-color: #191919;
+}
+.ofertas-especiales h2 {
+  color: #fff;
 }
 
 .oferta {
@@ -217,6 +223,53 @@ body {
   padding: 1em 10px;
 }
 
+/*Estilos del footer*/
+.footer {
+  background-color: #191919;
+  color: #fff;
+  padding: 40px 0;
+}
+.container-footer {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding: 0 20px;
+}
+.footer-info,
+.footer-social,
+.footer-map {
+  width: 33.33%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer-social ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer-bottom {
+  background-color: #222;
+  padding: 20px 0;
+}
+
+.footer-bottom p {
+  margin: 0;
+  float: left;
+}
+
+.footer-bottom ul {
+  float: right;
+}
+
+.footer-bottom ul li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.footer-bottom a {
+  color: #fff;
+  text-decoration: none;
+}
 /* .agregar-al-carrito {
     background-color: #bfbbb4;
     color: white;
