@@ -22,6 +22,9 @@ img {
     height: 300px;
     object-fit: cover;
 }
+body {
+    font-family: var(--ff);
+}
 
 /*Navegacion de la página*/
 .main-menu-list {
@@ -33,9 +36,6 @@ img {
     padding: 7px 10px
 }
 
-body {
-    font-family: var(--ff);
-}
 
 /*Section Hero*/
 .hero {
@@ -172,6 +172,61 @@ body {
   .likes {
     margin-left: 10px;
   }
+
+
+.ofertas-especiales {
+    padding: 20px;
+}
+
+.oferta {
+    display: flex;
+    margin-bottom: 20px;
+}
+.oferta img {
+    max-width: 200px;
+    min-width: 200px;
+    height: 200px;
+}
+.descripcion {
+    max-width: 200px;
+    padding: 1em;
+}
+
+.agregar-al-carrito {
+    background-color: #bfbbb4;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+.agregar-al-carrito:hover {
+    background-color: #2a3745;
+}
+
+.pedidos {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.pedidos h2 {
+    margin-bottom: 10px;
+}
+
+#lista-pedidos {
+    list-style-type: none;
+    padding: 0;
+}
+
+#lista-pedidos li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
 
   /*Estilos generales para pantallas grandes*/
   header,
