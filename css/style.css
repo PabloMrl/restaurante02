@@ -83,7 +83,7 @@ body {
 /*Section Hero*/
 .hero {
   background-image: url(../img/bg-hero\ \(2\).jpg);
-  ;
+ background-size: cover;
   padding: 100px 0;
   background-repeat: no-repeat;
 }
@@ -350,10 +350,14 @@ body {
 } */
 
 /*Estilos generales para pantallas grandes*/
-.container-header,
 .hero,
+.container-header,
+.hero,.container-ofertas,
 .testimonials,
 .platillos {
   max-width: 1400px;
   margin-inline: auto;
+}
+.hero{
+  background-color: #e65100;
 }
