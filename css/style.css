@@ -43,15 +43,11 @@ body {
   padding: 7px 10px
 }
 
-/*Contenido del Header*/
-.container-header{
-  max-width: 1200px;
-  margin-inline: auto;
-}
 
 .logo h1 {
   color: #f8f8f8;
   padding: 1em 10px;
+ 
 }
 .menu-link {
   color: #ffcc00;
@@ -72,6 +68,7 @@ body {
 .container-input button {
   padding-block: 10px;
   width: 70px;
+  max-width: 70px;
   background-color: #ff6600;
   color: #e0e9e9;
   cursor: pointer;
@@ -353,7 +350,7 @@ body {
 } */
 
 /*Estilos generales para pantallas grandes*/
-
+.container-header,
 .hero,
 .testimonials,
 .platillos {
