@@ -25,6 +25,9 @@ img {
   height: 300px;
   object-fit: cover;
 }
+header {
+  background-color: #191919;
+}
 
 body {
   font-family: var(--ff);
@@ -40,12 +43,52 @@ body {
   padding: 7px 10px
 }
 
+/*Contenido del Header*/
+.container-header{
+  max-width: 1200px;
+  margin-inline: auto;
+}
 
+.logo h1 {
+  color: #f8f8f8;
+  padding: 1em 10px;
+}
+.menu-link {
+  color: #ffcc00;
+}
+
+/*Container input*/
+.container-input {
+  padding: 1em 10px;
+  width: 100%;
+ 
+}
+.container-input input[type="text"] {
+  padding-block: 10px;
+  width: 80%;
+  border: none;
+}
+
+.container-input button {
+  padding-block: 10px;
+  width: 70px;
+  background-color: #ff6600;
+  color: #e0e9e9;
+  cursor: pointer;
+  transition: background-color 0.3s step-end;
+}
+.container-input button:hover {
+  background-color: #e65100;
+}
+.container-input ::placeholder {
+ padding: 20px;
+}
 /*Section Hero*/
 .hero {
   background-image: url(../img/bg-hero\ \(2\).jpg);
-  background-position: center;
+  ;
   padding: 100px 0;
+  background-repeat: no-repeat;
 }
 
 .content-hero {
@@ -310,7 +353,7 @@ body {
 } */
 
 /*Estilos generales para pantallas grandes*/
-header,
+
 .hero,
 .testimonials,
 .platillos {
