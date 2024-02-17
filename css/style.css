@@ -74,9 +74,8 @@ body {
 
 /*Container input*/
 .search-container {
-  /* padding: 1em ; */
-  height: 45px;
-  margin-left: 10px;
+  padding: 1em ;
+ 
   width: 100%;
 }
 
