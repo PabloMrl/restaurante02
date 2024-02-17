@@ -6,6 +6,9 @@
   --fw-regular: 400;
   --fw-medium: 500;
   --fw-bold: 700;
+  --clr-primary: hsl(0, 0%, 97%);
+  --bg-button: hsl(24, 100%, 50%);
+  --bg-button-hv: hsl(21, 100%, 45%);
 }
 
 /*Reset de propiedades por defecto de los navegadores*/
@@ -16,7 +19,14 @@
   list-style: none;
   text-decoration: none;
 }
-p, h1, h2, h3, h4, h5, h6 {
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
 
@@ -25,6 +35,7 @@ img {
   height: 300px;
   object-fit: cover;
 }
+
 header {
   background-color: #191919;
   position: sticky;
@@ -39,53 +50,67 @@ body {
 .main-menu-list {
   display: flex;
   gap: 5px;
+  text-align: center;
+  
 }
 
 .main-menu-item {
-  padding: 7px 10px
+  padding: 10px 5px;
+  width: 90px;
+  
 }
 
 
 .logo h1 {
-  color: #f8f8f8;
-  padding: 1em 10px;
- 
+  color: var(--clr-primary);
+  padding: 1em 23px;
+
 }
+
 .menu-link {
   color: #ffcc00;
+  
 }
 
 /*Container input*/
-.container-input {
-  padding: 1em 10px;
+.search-container {
+  padding: 1em ;
+  position: relative;
+  display: inline-block;
   width: 100%;
  
+
 }
-.container-input input[type="text"] {
-  padding-block: 10px;
+
+.search-container input[type="text"] {
+  padding: 10px 0;
   width: 80%;
   border: none;
 }
 
-.container-input button {
-  padding-block: 10px;
-  width: 70px;
+.search-container button {
+  padding: 10px 0;
+  width: 50px;
   max-width: 70px;
-  background-color: #ff6600;
-  color: #e0e9e9;
+  background-color: var(--bg-button);
+  color: var(--clr-primary);
   cursor: pointer;
   transition: background-color 0.3s step-end;
+  border: none;
 }
-.container-input button:hover {
-  background-color: #e65100;
+
+.search-container button:hover {
+  background-color: var(--bg-button-hv);
 }
-.container-input ::placeholder {
- padding: 20px;
+
+.search-container ::placeholder {
+  padding: 20px;
 }
+
 /*Section Hero*/
 .hero {
   background-image: url(../img/bg-hero\ \(2\).jpg);
- background-size: cover;
+  background-size: cover;
   padding: 100px 0;
   background-repeat: no-repeat;
 }
@@ -94,15 +119,20 @@ body {
   padding-inline: 2em;
 }
 
+
+/*estilos generales de color*/
+.content-hero h2,
+.content-hero p {
+  color: var(--clr-primary)
+}
+
 .content-hero h2 {
   font-weight: var(--fw-bold);
   margin-bottom: 20px;
-  color: #fff;
   font-size: 32px;
 }
 
 .content-hero p {
-  color: #e0e9e9;
   font-size: 24px;
   text-shadow: 1px 1px 1px rgba(98, 6, 6, 0.934);
 }
@@ -230,15 +260,16 @@ body {
 
 /* Secction ofertas especiales*/
 .ofertas-especiales {
- background-color: #191919;
+  background-color: #191919;
 }
+
 .ofertas-especiales h2 {
   color: #fff;
 }
 
 .oferta {
   display: flex;
- 
+
   margin-bottom: 20px;
 }
 
@@ -249,7 +280,7 @@ body {
 }
 
 .descripcion {
- flex: 1 200px ;
+  flex: 1 200px;
   padding: 1em;
   background-color: #fff;
 }
@@ -271,11 +302,13 @@ body {
   color: #fff;
   padding: 40px 0;
 }
+
 .container-footer {
   max-width: 1200px;
   margin-inline: auto;
   padding: 0 20px;
 }
+
 .footer-info,
 .footer-social,
 .footer-map {
@@ -284,6 +317,7 @@ body {
   flex-direction: column;
   gap: 10px;
 }
+
 .footer-social ul li {
   display: inline-block;
   margin-right: 10px;
@@ -312,6 +346,7 @@ body {
   color: #fff;
   text-decoration: none;
 }
+
 /* .agregar-al-carrito {
     background-color: #bfbbb4;
     color: white;
@@ -354,12 +389,32 @@ body {
 /*Estilos generales para pantallas grandes*/
 .hero,
 .container-header,
-.hero,.container-ofertas,
+.hero,
+.container-ofertas,
 .testimonials,
 .platillos {
   max-width: 1400px;
   margin-inline: auto;
 }
-.hero{
+
+.hero {
   background-color: #e65100;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Estilos para tabletas en modo apaisado */
+  .container-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+  }
+  .logo h1 {
+   font-size: 24px;
+  }
+  nav {
+    flex: 1;
+  }
+  
+  
 }

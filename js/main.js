@@ -11,3 +11,13 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
   
+  document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.getElementById('search-input');
+    const searchButton = document.getElementById('search-button');
+  
+    searchButton.addEventListener('click', function() {
+      searchInput.classList.toggle('active');
+      searchInput.focus(); // Para que el cursor esté dentro del input automáticamente
+    });
+  });
+  
