@@ -403,18 +403,14 @@ body {
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   /* Estilos para tabletas en modo apaisado */
-  .container-header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    
-  }
-  .logo h1 {
-   font-size: 24px;
-  }
-  nav {
-    flex: 1;
-  }
+ 
   
   
+}
+
+@media screen and (min-width: 768px) and (max-width:990px) {
+.container-header {
+  display: flex;
+  align-items: center;
+}
 }
