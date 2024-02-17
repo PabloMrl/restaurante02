@@ -74,18 +74,17 @@ body {
 
 /*Container input*/
 .search-container {
-  padding: 1em ;
-  position: relative;
-  display: inline-block;
+  /* padding: 1em ; */
+  height: 45px;
+  margin-left: 10px;
   width: 100%;
- 
-
 }
 
 .search-container input[type="text"] {
-  padding: 10px 0;
-  width: 80%;
+  padding: 10px 20px;
+  width: 85%;
   border: none;
+  box-sizing: border-box;
 }
 
 .search-container button {
@@ -416,4 +415,5 @@ body {
 .logo {
   display: none;
 }
+
 }
