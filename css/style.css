@@ -75,7 +75,6 @@ body {
 /*Container input*/
 .search-container {
   padding: 1em ;
- 
   width: 100%;
 }
 
@@ -406,13 +405,34 @@ body {
   
 }
 
-@media screen and (min-width: 768px) and (max-width:1080px) {
+@media screen and (min-width: 768px) and (max-width:1400px) {
+
 .container-header {
   display: flex;
+  justify-content: space-around;
   align-items: center;
 }
 .logo {
+  flex:1;
+}
+
+.search-container{
+  display: flex;
+  justify-content: flex-end;
+}
+.actions {
   display: none;
+}
+
+.dish-list{
+  display: flex;
+  gap: 20px;
+}
+.search-container input[type="text"] {
+  padding: 10px 20px;
+  width: 50%;
+  border: none;
+  box-sizing: border-box;
 }
 
 }
